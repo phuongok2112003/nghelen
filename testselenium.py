@@ -10,7 +10,7 @@ import os
 import datetime
 # import win32com.client
 from selenium.webdriver.chrome.options import Options
-tkhoan=str(os.getcwd())+"/tk"
+tkhoan=str(os.getcwd())+"/nghelen/tk"
 chrome_option = Options()
 chrome_option.add_argument("--headless")
 
@@ -67,9 +67,9 @@ ngay_gio_hien_tai = datetime.datetime.now()
 tieude.send_keys(str(ngay_gio_hien_tai))
 
 data=""
-duong_dan=str(os.getcwd())+"/content.txt"
+duong_dan=str(os.getcwd())+"/nghelen/content.txt"
 if os.path.exists(duong_dan):
-    with open("content.txt", "r") as file:
+    with open(duong_dan, "r") as file:
         # Đọc nội dung tệp và lưu vào biến data
         data = file.read()
 
@@ -78,7 +78,7 @@ if os.path.exists(duong_dan):
     noidung.click()
     noidung.send_keys(data)
 
-    os.remove(duong_dan)
+    # os.remove(duong_dan)
 
 
 
