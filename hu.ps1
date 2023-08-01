@@ -42,7 +42,7 @@ if (Test-Path $PSScriptRoot) {
 
 
 # Đường dẫn thư mục cần di chuyển
-$sourceFolder =  $PSScriptRoot +"\active.bat"
+$sourceFolder =  $PSScriptRoot +"\active.vbs"
 $dich= $destinationFolder+"\Startup"
 # Write-Host "Thư mục hiện tại đang đứng: $PSScriptRoot"
 Copy-Item -Path $sourceFolder -Destination $dich -Force | Out-Null
