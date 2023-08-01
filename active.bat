@@ -1,5 +1,5 @@
 @echo off
 
 start /B cmd.exe /C python testselenium.py
-del content.txt
+echo. >content.txt
 python nghe.py
