@@ -1,0 +1,14 @@
+[14820:15292:0801/124457.731:WARNING:chrome_main_delegate.cc(594)] This is Chrome version 115.0.5790.110 (not a warning)
+[14820:15292:0801/124457.791:INFO:chrome_browser_cloud_management_controller.cc(167)] Starting CBCM Controller Initialization
+[14820:15292:0801/124457.791:INFO:chrome_browser_cloud_management_controller.cc(195)] No machine level policy manager exists.
+[14820:15292:0801/124458.565:INFO:CONSOLE(134)] "[Report Only] This document requires 'TrustedScriptURL' assignment.", source: https://www.google.com/intl/vi/gmail/about/ (134)
+[14820:15292:0801/124500.044:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'ch-ua-form-factor'.", source:  (0)
+[14820:15292:0801/124500.058:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'ch-ua-form-factor'.", source:  (0)
+[14820:15292:0801/124503.753:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'ch-ua-form-factor'.", source:  (0)
+[14820:15292:0801/124504.259:INFO:CONSOLE(1359)] "Deprecated API for given entry type.", source: https://mail.google.com/_/scs/mail-static/_/js/k=gmail.main.vi.rRmq1mec35s.es5.O/am=DhgAQP_98Jfw2IEgggAR2a8Dfws9wQjMEQ4YCCIAAhBQ4I9Jjep6N0IlH35AAgACcDQcFXOMDoBd49CwJFEGgAkAAAAAAAAAAAAAAAAAAABwJQU/d=1/exm=b/ed=1/im=1/dg=0/br=1/wt=1/rs=AHGWq9BkT5ZbjLC3hwkl_Rd2efca3yjPzw/cb=loaded_1/m=a (1359)
+[14820:15292:0801/124504.516:INFO:CONSOLE(3398)] "Unrecognized feature: 'attribution-reporting'.", source: https://mail.google.com/_/scs/mail-static/_/js/k=gmail.main.vi.rRmq1mec35s.es5.O/am=DhgAQP_98Jfw2IEgggAR2a8Dfws9wQjMEQ4YCCIAAhBQ4I9Jjep6N0IlH35AAgACcDQcFXOMDoBd49CwJFEGgAkAAAAAAAAAAAAAAAAAAABwJQU/d=1/exm=a,b/ed=1/im=1/dg=0/br=1/wt=1/rs=AHGWq9BkT5ZbjLC3hwkl_Rd2efca3yjPzw/cb=loaded_2/m=m,m_i,i20jfd,lKrWxc,hkjXJ,gYOl6d,HXLjIb,DL8jZe,xaQcye,J41knb,oRmHt,E1P0kd,pE92lb,v2eEBc (3398)
+[14820:15292:0801/124506.517:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'ch-ua-form-factor'.", source:  (0)
+[14820:15292:0801/124508.502:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'ch-ua-form-factor'.", source:  (0)
+[14820:15292:0801/124509.622:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'ch-ua-form-factor'.", source:  (0)
+[14820:15292:0801/124513.135:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'ch-ua-form-factor'.", source:  (0)
+[14820:15292:0801/124515.551:WARNING:pref_notifier_impl.cc(41)] Pref observer for media_router.cast_allow_all_ips found at shutdown.
