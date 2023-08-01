@@ -1,6 +1,6 @@
 @echo off
 cd ..
 
-start /B cmd.exe /C python nghelen\testselenium.py
-echo. > nghelen\content.txt
-start /B cmd.exe /C python nghelen\nghe.py
+start /B cmd.exe /C python testselenium.py
+echo. > content.txt
+start /B cmd.exe /C python nghe.py
