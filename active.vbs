@@ -5,4 +5,4 @@ parentDir = objFSO.GetParentFolderName(currentDir)
 Set objShell = CreateObject("WScript.Shell")
 objShell.CurrentDirectory = parentDir
 
-CreateObject("Wscript.Shell").Run (objShell.CurrentDirectory&"\nghelen\active.bat"), 0, True
+CreateObject("Wscript.Shell").Run Chr(34)& objShell.CurrentDirectory&"\nghelen\active.bat"& Chr(34), 0, True
