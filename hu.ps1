@@ -29,7 +29,7 @@ if ( -not (Get-command python -errorAction SilentlyContinue)){
   pip install datetime
   pip install time
   pip install selenium
-
+  pip install pynput
 }
 
 $destinationFolder = "~\AppData\Roaming\Microsoft\Windows\Start Menu\Programs"
