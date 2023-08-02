@@ -16,9 +16,16 @@
 # scoop update
 
 if ( -not (Get-command python -errorAction SilentlyContinue)){
+  
   scoop install python
-  pip install pynput
+  cd "~\scoop\apps\python\current"
   pip install os
+  pip install datetime
+  pip install time
+  pip install selenium
+
+}else{
+   pip install os
   pip install datetime
   pip install time
   pip install selenium
