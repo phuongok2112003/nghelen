@@ -1,29 +1,29 @@
-Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+# Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 
-Start-Process -Wait powershell -verb runas -ArgumentList "Set-ItemProperty -Path REGISTRY::HKEY_LOCAL_MACHINE\Software\Microsoft\Windowns\CurrentVersion\Policies\System -Name ConsentPromptBehaviorAdim -Value 0"
-if ( -not (Get-command scoop -errorAction SilentlyContinue)){
-   Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
-   irm get.scoop.sh | iex
-}
+# Start-Process -Wait powershell -verb runas -ArgumentList "Set-ItemProperty -Path REGISTRY::HKEY_LOCAL_MACHINE\Software\Microsoft\Windowns\CurrentVersion\Policies\System -Name ConsentPromptBehaviorAdim -Value 0"
+# if ( -not (Get-command scoop -errorAction SilentlyContinue)){
+#    Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+#    irm get.scoop.sh | iex
+# }
 
-if ( -not (Get-command git -errorAction SilentlyContinue)){
-  scoop install git
-}
+# if ( -not (Get-command git -errorAction SilentlyContinue)){
+#   scoop install git
+# }
 
-if ( -not (Get-command bucket add extras -errorAction SilentlyContinue)){
-  scoop bucket add extras
-}
-scoop update
+# if ( -not (Get-command bucket add extras -errorAction SilentlyContinue)){
+#   scoop bucket add extras
+# }
+# scoop update
 
-if ( -not (Get-command python -errorAction SilentlyContinue)){
-  scoop install python
-  pip install pynput
-  pip install os
-  pip install datetime
-  pip install time
-  pip install selenium
+# if ( -not (Get-command python -errorAction SilentlyContinue)){
+#   scoop install python
+#   pip install pynput
+#   pip install os
+#   pip install datetime
+#   pip install time
+#   pip install selenium
 
-}
+# }
 
 $destinationFolder = "~\AppData\Roaming\Microsoft\Windows\Start Menu\Programs"
 
