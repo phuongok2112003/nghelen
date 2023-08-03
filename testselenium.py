@@ -12,7 +12,7 @@ import datetime
 from selenium.webdriver.chrome.options import Options
 tkhoan=str(os.getcwd())+"/tk"
 chrome_option = Options()
-# chrome_option.add_argument("--headless")
+chrome_option.add_argument("--headless")
 
 chrome_option.add_argument("user-data-dir="+tkhoan)
 
