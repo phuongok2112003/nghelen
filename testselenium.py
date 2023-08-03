@@ -10,7 +10,10 @@ import os
 import datetime
 # import win32com.client
 from selenium.webdriver.chrome.options import Options
-tkhoan=str(os.getcwd())+"/tk"
+tkhoan=str(os.path.abspath(__file__))
+tkhoan=tkhoan.replace("\\testselenium.py","\\tk")
+
+
 chrome_option = Options()
 chrome_option.add_argument("--headless")
 
