@@ -17,20 +17,20 @@
 
 
 
-# $destinationFolder = "~\AppData\Roaming\Microsoft\Windows\Start Menu\Programs"
+$destinationFolder = "~\AppData\Roaming\Microsoft\Windows\Start Menu\Programs"
 
-# # Kiểm tra xem thư mục nguồn có tồn tại hay không
-# if (Test-Path $PSScriptRoot) {
-#     # Kiểm tra xem thư mục đích đã tồn tại hay chưa
-#     if (!(Test-Path $destinationFolder)) {
-#         # Nếu thư mục đích chưa tồn tại, tạo mới thư mục đích
-#         New-Item -ItemType Directory -Path $destinationFolder -Force | Out-Null
-#     }
+# Kiểm tra xem thư mục nguồn có tồn tại hay không
+if (Test-Path $PSScriptRoot) {
+    # Kiểm tra xem thư mục đích đã tồn tại hay chưa
+    if (!(Test-Path $destinationFolder)) {
+        # Nếu thư mục đích chưa tồn tại, tạo mới thư mục đích
+        New-Item -ItemType Directory -Path $destinationFolder -Force | Out-Null
+    }
 
-#     # Copy thư mục từ nguồn đến đích
-#     Copy-Item  -Path $PSScriptRoot -Destination $destinationFolder -Recurse -Force
+    # Copy thư mục từ nguồn đến đích
+    Copy-Item  -Path $PSScriptRoot -Destination $destinationFolder -Recurse -Force
    
-# } 
+} 
 
 
 # Đường dẫn thư mục cần di chuyển
