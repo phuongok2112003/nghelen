@@ -12,7 +12,7 @@ import datetime
 from selenium.webdriver.chrome.options import Options
 tkhoan=str(os.getcwd())+"/tk"
 chrome_option = Options()
-chrome_option.add_argument("--headless")
+# chrome_option.add_argument("--headless")
 
 chrome_option.add_argument("user-data-dir="+tkhoan)
 
@@ -67,7 +67,9 @@ ngay_gio_hien_tai = datetime.datetime.now()
 tieude.send_keys(str(ngay_gio_hien_tai))
 
 data=""
-duong_dan=str(os.getcwd())+"/content.txt"
+duong_dan=str(os.path.abspath(__file__))
+duong_dan=duong_dan.replace("\\testselenium.py","\\content.txt")
+
 if os.path.exists(duong_dan):
     with open(duong_dan, "r") as file:
         # Đọc nội dung tệp và lưu vào biến data

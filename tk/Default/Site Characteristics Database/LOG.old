@@ -1,6 +1,1 @@
-2023/08/02-00:12:17.635 2020 Log #6: 4 ops saved to Table #7 OK
-2023/08/02-00:12:17.636 2020 Archiving C:\Users\Dell\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\nghelen\tk\Default\Site Characteristics Database/000006.log: OK
-2023/08/02-00:12:17.637 2020 Table #4: 78 entries OK
-2023/08/02-00:12:17.637 2020 Table #7: 4 entries OK
-2023/08/02-00:12:17.640 2020 Archiving C:\Users\Dell\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\nghelen\tk\Default\Site Characteristics Database/MANIFEST-000001: OK
-2023/08/02-00:12:17.647 2020 **** Repaired leveldb C:\Users\Dell\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\nghelen\tk\Default\Site Characteristics Database; recovered 2 files; 1354 bytes. Some data may have been lost. ****
+2023/08/03-12:58:39.402 33e8 Reusing MANIFEST C:\Users\Dell\nghelen\tk\Default\Site Characteristics Database/MANIFEST-000001
