@@ -48,8 +48,9 @@ try:
     matkhau.send_keys(Keys.ENTER)
     sleep(5)
 except:
+    br.get("https://mail.google.com/mail/u/3/#inbox")
     pass
-br.get("https://mail.google.com/mail/u/3/#inbox")
+
 soanthu=br.find_element(By.XPATH,"/html/body/div[7]/div[3]/div/div[2]/div[1]/div[1]/div/div")
 soanthu.click()
 sleep(3)
