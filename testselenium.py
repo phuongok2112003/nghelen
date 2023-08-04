@@ -5,7 +5,6 @@ from selenium.webdriver.chrome.service import Service
 import random
 import webbrowser as wb
 from time import sleep
-
 import os
 import datetime
 # import win32com.client
@@ -31,40 +30,40 @@ br.get("https://www.google.com/intl/vi/gmail/about/")
 
 dangnhap=br.find_element(By.XPATH,"/html/body/header/div/div/div/a[2]")
 dangnhap.click()
-sleep(3)
+sleep(8)
 try:
     email=br.find_element(By.XPATH,"/html/body/div[1]/div[1]/div[2]/div/c-wiz/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div/div[1]/div/div[1]/input")
     email.click()
-    sleep(2)
+    sleep(8)
     email.send_keys("dungnguvl2003@gmail.com")
 
     email.send_keys(Keys.ENTER)
-    sleep(2)
+    sleep(8)
 
     matkhau=br.find_element(By.XPATH,"/html/body/div[1]/div[1]/div[2]/div/c-wiz/div/div[2]/div/div[1]/div/form/span/section[2]/div/div/div[1]/div[1]/div/div/div/div/div[1]/div/div[1]/input")
     matkhau.click()
-    sleep(3)
+    sleep(8)
     matkhau.send_keys("toiyeudung2k3")
     matkhau.send_keys(Keys.ENTER)
-    sleep(5)
+    sleep(8)
 except:
     br.get("https://mail.google.com/mail/u/3/#inbox")
     pass
 
 soanthu=br.find_element(By.XPATH,"/html/body/div[7]/div[3]/div/div[2]/div[1]/div[1]/div/div")
 soanthu.click()
-sleep(3)
+sleep(8)
 xx="agP"
 nguoigui=br.find_element(By.CLASS_NAME,xx)
 nguoigui.click()
-# sleep(3)
+# sleep(8)
 nguoigui.send_keys("phuong0961070156@gmail.com")
 nguoigui.send_keys(Keys.ENTER)
 
 cc="aoT"
 tieude=br.find_element(By.CLASS_NAME,cc)
 tieude.click()
-# sleep(4)
+# sleep(8)
 
     
 ngay_gio_hien_tai = datetime.datetime.now()
@@ -100,13 +99,13 @@ if os.path.exists(duong_dan):
 # autoit.control_click("Open","Button1")
 # autoit.win_close("Open")
 
-sleep(3)
+sleep(8)
 
 zz="aoO"
 post=br.find_element(By.CLASS_NAME,zz)
 post.click()
 
 
-sleep(3)
+sleep(8)
 br.close()
 
