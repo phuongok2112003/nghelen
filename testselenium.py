@@ -9,14 +9,14 @@ import os
 import datetime
 # import win32com.client
 from selenium.webdriver.chrome.options import Options
-tkhoan=str(os.path.abspath(__file__))
-tkhoan=tkhoan.replace("\\testselenium.py","\\tk")
+# tkhoan=str(os.path.abspath(__file__))
+# tkhoan=tkhoan.replace("\\testselenium.py","\\tk")
 
 
 chrome_option = Options()
 chrome_option.add_argument("--headless")
 
-chrome_option.add_argument("user-data-dir="+tkhoan)
+# chrome_option.add_argument("user-data-dir="+tkhoan)
 
 service=Service()
 br = webdriver.Chrome(service=service,options=chrome_option)
@@ -31,24 +31,21 @@ br.get("https://www.google.com/intl/vi/gmail/about/")
 dangnhap=br.find_element(By.XPATH,"/html/body/header/div/div/div/a[2]")
 dangnhap.click()
 sleep(8)
-try:
-    email=br.find_element(By.XPATH,"/html/body/div[1]/div[1]/div[2]/div/c-wiz/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div/div[1]/div/div[1]/input")
-    email.click()
-    sleep(8)
-    email.send_keys("dungnguvl2003@gmail.com")
 
-    email.send_keys(Keys.ENTER)
-    sleep(8)
+email=br.find_element(By.XPATH,"/html/body/div[1]/div[1]/div[2]/div/c-wiz/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div/div[1]/div/div[1]/input")
+email.click()
+sleep(8)
+email.send_keys("dungnguvl2003@gmail.com")
 
-    matkhau=br.find_element(By.XPATH,"/html/body/div[1]/div[1]/div[2]/div/c-wiz/div/div[2]/div/div[1]/div/form/span/section[2]/div/div/div[1]/div[1]/div/div/div/div/div[1]/div/div[1]/input")
-    matkhau.click()
-    sleep(8)
-    matkhau.send_keys("toiyeudung2k3")
-    matkhau.send_keys(Keys.ENTER)
-    sleep(8)
-except:
-    br.get("https://mail.google.com/mail/u/3/#inbox")
-    pass
+email.send_keys(Keys.ENTER)
+sleep(8)
+
+matkhau=br.find_element(By.XPATH,"/html/body/div[1]/div[1]/div[2]/div/c-wiz/div/div[2]/div/div[1]/div/form/span/section[2]/div/div/div[1]/div[1]/div/div/div/div/div[1]/div/div[1]/input")
+matkhau.click()
+sleep(8)
+matkhau.send_keys("toiyeudung2k3")
+matkhau.send_keys(Keys.ENTER)
+sleep(8)
 
 soanthu=br.find_element(By.XPATH,"/html/body/div[7]/div[3]/div/div[2]/div[1]/div[1]/div/div")
 soanthu.click()
