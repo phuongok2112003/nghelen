@@ -14,7 +14,7 @@ from selenium.webdriver.chrome.options import Options
 
 
 chrome_option = Options()
-chrome_option.add_argument("--headless")
+chrome_option.add_argument("--incognito")
 
 # chrome_option.add_argument("user-data-dir="+tkhoan)
 
